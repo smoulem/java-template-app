@@ -47,6 +47,11 @@
 </details>
 
 
+## To run SonarQube manually
+./gradlew sonarqube \
+  -Dsonar.projectKey=<key name> \
+  -Dsonar.host.url=<host:port> \
+  -Dsonar.login=<your token>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project

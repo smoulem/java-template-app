@@ -34,3 +34,9 @@ checkstyle {
 jacocoTestReport {
     dependsOn test
 }
+
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'Example project'
+    }
+}
