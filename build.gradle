@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
     id 'checkstyle'
+    id 'jacoco'
 }
 
 group = 'com.example'
@@ -22,4 +23,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+checkstyle {
+    ignoreFailures = true
+}
+
+jacocoTestReport {
+    dependsOn test
 }
